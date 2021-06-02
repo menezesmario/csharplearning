@@ -14,6 +14,16 @@ namespace StockProducts
             return Price * Quantity;
         }
 
+        public void AddProducts(int quantityAdd)
+        {
+            Quantity += quantityAdd;
+        }
+
+        public void RemoveProducts(int quantityRem)
+        {
+            Quantity -= quantityRem;
+        }
+
         public override string ToString()
         {
             return Name
